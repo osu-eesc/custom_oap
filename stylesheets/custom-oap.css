@@ -1,6 +1,95 @@
 /* Put custom CSS and CSS overrides in this file. */
 
-/* ---- GENEREAL RULES --------------------------------------------------------- */
+/* ---- GENEREAL RULES ------------------------------------------------------------------------- */
+/* FOR PREVIOUS VERSION OF OAP */
+	/* Styling images and image description withing main content body */
+		.float-right dd, 
+		.float-right-vertical dd, 
+		.float-right-buttons dd {
+		    margin: 0;
+		    padding: 10px;
+		}
+
+		dl.float-right {
+			background-color: #F3F3F3;
+			border: 1px solid #DDDDDD;
+			float: right;
+			margin: 0 0 15px 15px;
+			padding: 0;
+			text-align: left;
+			width: 280px;
+		}
+
+		dl.float-right-vertical {
+		    background-color: #F3F3F3;
+		    border: 1px solid #DDDDDD;
+		    float: right;
+		    margin: 0 0 15px 15px;
+		    padding: 0;
+		    text-align: left;
+		    width: 190px;
+		}
+
+		.float-right dd img, 
+		.float-right-vertical dd img, 
+		.float-right-buttons dd img {
+		    border: medium none;
+		    padding-bottom: 3px;
+		}
+
+		#content .float-right dd.caption, 
+		#content .float-right-vertical dd.caption, 
+		#content .float-right-buttons dd.caption {
+		    font-family: inherit;
+		    font-size: 0.925em;
+		    font-style: inherit;
+		    color: #595959;
+		    padding-top: 0;
+		}
+
+	/* Story Header */
+		.field-name-field-story-header .field-item {
+			padding-bottom: 5%;
+		}
+
+	/* Deck */
+		.field-name-field-deck .field-item {
+			padding-bottom: 2%;
+			font-size: 1.20em;
+		}
+
+		.field-field-deck p {
+			font-size: 1.20em;
+			padding-top: 5%;
+		}
+
+	/* Deck - Remove additional padding above first item */
+		.field-field-deck p:first-child {
+			padding-top: 1%;
+	
+		}
+
+	/* Author's Name */
+		.node-article div.field-name-field-author {
+		  font-style: italic;
+		  padding-bottom: 10px;
+		}
+
+
+	/* Hide "Add to chile page" */
+		.content .book_add_child {
+			display: none;
+		}
+
+	/* Style Printer-friendly version link */
+		.node-oap-magazine ul.links,
+		.node-oap-magazine li,
+		ul.inline li {
+			margin-left: 0;
+			padding-left: 0;
+		  padding: 0 0;
+		}
+		
 /* Sidebar Primary */
 	.view-magazine-cover img {
 	 display: block;
@@ -246,8 +335,7 @@
 		margin-right: 0px;
 	}
 
-/*  ---- Sidebar - Secondary ------------------------------------------------------------ */
-
+/*  ---- Sidebar - Secondary --------------------- */
 	#sidebar-second .content { /* full sidebar width 270px id="sidebar-second" */
 		margin-left: auto;
 		margin-right: auto;
@@ -277,38 +365,143 @@
 	}
 
 
-/* --- Unit page navigation ------------------------------------------------------------ */
+/* --- Unit page navigation -------------------- */
 
 /* "Read more" menu under content */
-#block-menu-block-1 h2 {
-  font-size: 1em;
-  line-height: 1em;
-  color: inherit;
-  font-family: inherit;
-}
+	#block-menu-block-1 h2 {
+	  font-size: 1em;
+	  line-height: 1em;
+	  color: inherit;
+	  font-family: inherit;
+	}
 
-#block-menu-block-1 ul {
-  margin-left: 10px;
-  font-family: inherit;
-}
+	#block-menu-block-1 ul {
+	  margin-left: 10px;
+	  font-family: inherit;
+	}
 
-#block-menu-block-1 ul li {
-  list-style-image: url('../../../../../all/themes/doug_fir/images/bullet.png');
-  line-height: 20px;
-}
+	#block-menu-block-1 ul li {
+	  list-style-image: url('../../../../../all/themes/doug_fir/images/bullet.png');
+	  line-height: 20px;
+	}
 
-/* "In this issue" sidebar sub-items */
-#block-views-article-list-block-1 .view-display-id-block_4 ul {
-  margin-bottom: 0;
-}
+	/* "In this issue" sidebar sub-items */
+	#block-views-article-list-block-1 .view-display-id-block_4 ul {
+	  margin-bottom: 0;
+	}
 
-#block-views-article-list-block-1 .view-display-id-block_4 ul li {
-  /*list-style: none;*/
-  padding: 0;
-  margin-left: 15px;
-}
+	#block-views-article-list-block-1 .view-display-id-block_4 ul li {
+	  /*list-style: none;*/
+	  padding: 0;
+	  margin-left: 15px;
+	}
 
-/*--------------------------------------------------------------------------*/
+/* ---- Title ------------------ */
+	#page-title {
+		display: none !important;
+	}
+
+/*  ---- Footer ---------------- */
+	#footer li {
+		list-style: none;
+	}	
+
+	#footer ul a {
+	    display: inline;
+	}
+
+	#footer a {
+		text-decoration: underline;
+	}
+
+	#footer #footer-left {
+		float: left;
+		width: 13%;
+		padding-left: 2%;
+		min-width: 150px;
+		padding-bottom: 3%;
+	}
+
+	#footer #footer-center,
+	#footer #footer-right {
+		float: left;
+		width: 20%;
+		padding-left: 6%;
+		min-width: 150px;
+	}
+	
+/*  --- Dinner in Oregon page  ---------------- */
+	#node-2074 .field-name-field-story-header .field-item {
+	 padding-bottom: 0; 
+	}
+
+	img.menu-image {
+		padding-bottom: 1em;
+	}
+
+	div.food-menu-item  {
+		clear: both;
+	}
+
+	div.dinner-menu li {
+	  list-style: none;
+	}
+
+	div.dinner-menu .views-field-field-teaser-image-fid {
+	  float: left;
+	  padding-right: 0.75em;
+	}
+
+	div.dinner-menu .views-field-field-deck-value {
+	  font-size: 0.875em;
+	}
+
+	div.dinner-menu div.dotted-line  {
+		border-bottom: 1px dotted #999;
+		margin: 1.5em 0 1.5em 0;
+		clear: both;	
+	}
+	
+/*  --- Dinner in Oregon page  ------------ */
+	#node-2074 .field-name-field-story-header .field-item {
+	 padding-bottom: 0; 
+	}
+
+	img.menu-image {
+		padding-bottom: 1em;
+	}
+
+	div.food-menu-item  {
+		clear: both;
+	}
+
+	div.dinner-menu li {
+	  list-style: none;
+	}
+
+	div.dinner-menu .views-field-field-teaser-image-fid {
+	  float: left;
+	  padding-right: 0.75em;
+	}
+
+	div.dinner-menu .views-field-field-deck-value {
+	  font-size: 0.875em;
+	}
+
+	div.dinner-menu div.dotted-line  {
+		border-bottom: 1px dotted #999;
+		margin: 1.5em 0 1.5em 0;
+		clear: both;	
+	}
+	
+/* remove bg color on odd table rows */
+	.node tr:nth-child(2n+1) {
+	  background-color: transparent;
+	}
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*--------------------------------Viewport rules below here--------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
 @media (min-width: 1200px) {
 	
 }
@@ -454,192 +647,6 @@
 	
 }
 
-
-/* ---- LEGACY: TO BE SORTED INTO FORM FACTORS --------------------------------- */
-/* ---- Front page ------------------------------------------------------------ */
-
-/* laying out main articles with thumbs */
-/*.view-magazine-articles .view-content .views-field-field-teaser-image .field-content {
-	width: 16%;
-	float: left;
-}
-
-.view-magazine-articles .view-content .views-field-title .field-content,
-.view-magazine-articles .view-content .views-field-field-deck .field-content {
-	width: 72%;
-	float: left;
-}*/
-
-
-/*  ---- Sidebar - Primary ------------------------------------------------------------ */
-
-
-
-
-/* ---- Title -------------------------------------------------------------------- */
-#page-title {
-	display: none !important;
-}
-
-/*  ---- Main Content ------------------------------------------------------------ */
-
-
-
-
-/* FOR PREVIOUS VERSION OF OAP */
-/* Styling images and image description withing main content body */
-.float-right dd, 
-.float-right-vertical dd, 
-.float-right-buttons dd {
-    margin: 0;
-    padding: 10px;
-}
-
-dl.float-right {
-	background-color: #F3F3F3;
-	border: 1px solid #DDDDDD;
-	float: right;
-	margin: 0 0 15px 15px;
-	padding: 0;
-	text-align: left;
-	width: 280px;
-}
-
-dl.float-right-vertical {
-    background-color: #F3F3F3;
-    border: 1px solid #DDDDDD;
-    float: right;
-    margin: 0 0 15px 15px;
-    padding: 0;
-    text-align: left;
-    width: 190px;
-}
-
-.float-right dd img, 
-.float-right-vertical dd img, 
-.float-right-buttons dd img {
-    border: medium none;
-    padding-bottom: 3px;
-}
-
-#content .float-right dd.caption, 
-#content .float-right-vertical dd.caption, 
-#content .float-right-buttons dd.caption {
-    font-family: inherit;
-    font-size: 0.925em;
-    font-style: inherit;
-    color: #595959;
-    padding-top: 0;
-}
-
-/* Story Header */
-.field-name-field-story-header .field-item {
-	padding-bottom: 5%;
-}
-
-/* Deck */
-.field-name-field-deck .field-item {
-	padding-bottom: 2%;
-	font-size: 1.20em;
-}
-
-.field-field-deck p {
-	font-size: 1.20em;
-	padding-top: 5%;
-}
-
-/* Deck - Remove additional padding above first item */
-.field-field-deck p:first-child {
-	padding-top: 1%;
-	
-}
-
-/* Author's Name */
-.node-article div.field-name-field-author {
-  font-style: italic;
-  padding-bottom: 10px;
-}
-
-
-/* Hide "Add to chile page" */
-.content .book_add_child {
-	display: none;
-}
-
-/* Style Printer-friendly version link */
-.node-oap-magazine ul.links,
-.node-oap-magazine li,
-ul.inline li {
-	margin-left: 0;
-	padding-left: 0;
-  padding: 0 0;
-}
-
-/*  ---- Footer ------------------------------------------------------------ */
-#footer li {
-	list-style: none;
-}	
-
-#footer ul a {
-    display: inline;
-}
-
-#footer a {
-	text-decoration: underline;
-}
-
-#footer #footer-left {
-	float: left;
-	width: 13%;
-	padding-left: 2%;
-	min-width: 150px;
-	padding-bottom: 3%;
-}
-
-#footer #footer-center,
-#footer #footer-right {
-	float: left;
-	width: 20%;
-	padding-left: 6%;
-	min-width: 150px;
-}
-
-/*  --- Dinner in Oregon page  ------------------------------------------------------------ */
-
-#node-2074 .field-name-field-story-header .field-item {
- padding-bottom: 0; 
-}
-
-img.menu-image {
-	padding-bottom: 1em;
-}
-
-div.food-menu-item  {
-	clear: both;
-}
-
-div.dinner-menu li {
-  list-style: none;
-}
-
-div.dinner-menu .views-field-field-teaser-image-fid {
-  float: left;
-  padding-right: 0.75em;
-}
-
-div.dinner-menu .views-field-field-deck-value {
-  font-size: 0.875em;
-}
-
-div.dinner-menu div.dotted-line  {
-	border-bottom: 1px dotted #999;
-	margin: 1.5em 0 1.5em 0;
-	clear: both;	
-}
-
-/* remove bg color on odd table rows */
-.node tr:nth-child(2n+1) {
-  background-color: transparent;
-}
-
-
+/*-----------------------------------------------------------------------------------------------------*/
+/*--------------------------------Please don't add rules below here------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
