@@ -1,0 +1,645 @@
+/* Put custom CSS and CSS overrides in this file. */
+
+/* ---- GENEREAL RULES --------------------------------------------------------- */
+/* Sidebar Primary */
+	.view-magazine-cover img {
+	 display: block;
+	 margin: 0 auto; 
+	}
+
+/* Sidebar Secondary */	
+	#page-wrapper #block-views-article-list-block-1,
+	#page-wrapper #block-views-article-list-block-1 .content {
+	 border-bottom: none;
+	 margin-bottom: 0;
+	 padding-bottom: 0;
+	}
+	
+	#page-wrapper #block-views-depth-of-field-block {
+	 margin-top: 0;
+	 padding-top: 0;
+	}
+	
+/* Article lists - page */
+  #content .view-magazine-articles .view-content p,
+  #content .view-depth-of-field .view-content p { /* overwrite theme style */
+    margin-bottom: 0;
+  }
+
+  .view-magazine-articles .view-content .views-row,
+  .view-depth-of-field .view-content .views-row {
+  	padding-bottom: 1.3em;
+  }
+
+  .view-magazine-articles .view-content h3,
+  .view-depth-of-field .view-content h3 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 106.25%; /* if 16px is default, 17px/16px = 106.25%  */
+    line-height: 100%;
+  }
+
+  .view-magazine-articles .view-content h3 a,
+  .view-depth-of-field .view-content h3 a {
+    color: #000;
+  }
+
+  .view-magazine-articles .view-content img,
+  .view-depth-of-field .view-content img {
+    margin-right: 16px;
+  }
+  
+/* Article lists - sidebar */	
+
+  .region-sidebar-second .view-article-list .views-field-title,
+  .region-sidebar-second .view-depth-of-field .views-field-colorbox-1 {
+    font-size: 107.15%;
+    padding-top: 3px;
+  }
+
+  .region-sidebar-second .view-article-list .views-field-title a,
+  .region-sidebar-second .view-depth-of-field .views-field-colorbox-1 a {
+    color: #000;
+  }
+
+/* Back Issues Page */
+	.page-back-issues .view-magazine-backissues h3 {
+		margin-top: 0;
+	}
+
+	.page-back-issues .view-magazine-backissues .view-content {
+	  overflow: hidden;
+	}
+	
+	.page-back-issues .view-magazine-backissues .view-content a {
+		color: #252525;
+	}
+
+	.page-back-issues .view-magazine-backissues .view-grouping {
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #d9d9d9 ;
+	}
+	
+/* Topics Pages */
+	.page-topics .view-topics-view h3 {
+		margin: 0 0 1em 0;
+		border-bottom: solid 1px #d9d9d9;
+	}
+
+	.page-topics .view-topics-view .views-row {
+		margin-bottom: 18px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #d9d9d9;
+	}
+
+	.page-topics .view-topics-view .views-row .span2 {
+		max-width: 110px;
+	}
+
+	.page-topics .view-topics-view .rss-link a {
+		float:right;
+		margin-top: 4px;
+	}
+	
+/* Graphical Search */
+	.page-graphical-search .field-content h3 {
+		margin-top: 0;
+		line-height:inherit;
+	}
+
+	.page-graphical-search #content .field-content p {
+		margin:0;
+	}
+
+	.page-graphical-search .view-magazine-search .views-row {
+		margin-bottom: 18px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #d9d9d9;
+	}
+	
+	.page-graphical-search .view-magazine-search .views-row-last {
+		padding-bottom: 20px;
+		border-bottom: none
+	}
+
+	.page-graphical-search .view-magazine-search .views-row .span2 {
+		max-width: 110px;
+	}
+
+/* Old Article Images */
+	.node-type-article table.image {
+		width: auto;
+		float: right;
+		margin-left: 10px;
+	}
+
+/* Article Author Field */
+	.content .node .field-name-field-author {
+		margin-bottom: 10px;
+	}
+
+	.content .node .field-name-field-sub-title {
+		font-size: 1.5em;
+		margin-bottom: 10px;
+	}
+
+/* Article topics ("published in") */
+	.content .node .field-name-field-topics {
+	  margin-top: 2em;
+	  font-size: 87.5%;
+	}
+
+/* Social Media Sharing Block */
+	.service-links {
+		float: right;
+		padding: 0 0 35px 25px;
+		font-family: "EksjaExtremesRegular", LeituraNews, serif;
+		font-size: 77.5%;
+		line-height: 1.75em;
+	}
+	
+	.service-label {
+		/*font-weight: bold;*/
+		border-bottom: 1px dotted #999;
+	}
+
+	.service-links ul {
+		list-style: none;
+		margin: 0;
+	}
+
+	.service-links ul li {
+		list-style-image: none;
+		margin: 0;
+		line-height: 1.75em;
+		border-bottom: 1px dotted #999;
+		padding-right: 2em;
+	}
+
+/* Top hat search form */
+	#osu-top-hat .oap-search {
+		float: right;
+		height: 100%;
+	}
+
+	#osu-top-hat .oap-search .content {
+		margin: 0;	
+		height: 100%;
+	}
+
+	#osu-top-hat .oap-search .form-search {
+		margin: 0;
+		margin-top: 15px;
+	}
+
+	#osu-top-hat .oap-search .form-search input {
+		width: auto;
+		height: 14px;
+		padding: 3px 10px 5px 10px;
+		-webkit-border-radius: 14px;
+		-moz-border-radius: 14px;
+		border-radius: 14px;
+	}
+
+/* Graphical-search page */
+	.view-id-magazine_search .views-submit-button {
+	
+	}
+
+	.view-id-magazine_search .views-submit-button input {
+		padding: 5px 10px;
+	}
+
+	.result-text {
+		padding-bottom: 10px;
+		margin-bottom: 20px;
+		border-bottom: 1px #d9d9d9 solid;
+	}
+	
+/* Article Sidebar (the field after article content, not the page region) */
+	.content .node .field-name-field-sidebar-sub-title {
+		background-color: #EFEDEE;
+		padding: 10px;
+		margin: 20px 0px 0px 0px;
+		border: solid 1px #DDDDDD;
+		border-bottom: none;
+	}
+
+	.content .node .field-name-field-sidebar-sub-title h3 {
+		margin: 0;
+	}
+
+	.content .node .field-name-field-sidebar-body {
+		background-color: #efeeee;
+		padding: 10px;
+		border: solid 1px #DDDDDD;
+		border-top: none;
+	}
+
+	.content .node .field-name-field-sidebar-body .caption-inner {
+		background-color: #F3F3F3;
+		max-width: 268px;
+	}
+
+	.content .node .field-name-field-sidebar-body .caption-inner img {
+		margin-right: 0px;
+	}
+
+/*  ---- Sidebar - Secondary ------------------------------------------------------------ */
+
+	#sidebar-second .content { /* full sidebar width 270px id="sidebar-second" */
+		margin-left: auto;
+		margin-right: auto;
+		min-width: 115px;
+		width: 60%;
+	}
+
+	#sidebar-second #block-views-article-list-block-1 .content {
+		margin-top: .4em;
+	}
+
+	#sidebar-second .view-article-list .views-field-view {
+		font-size: 90%;
+	}
+
+	#sidebar-second .content h3 {
+		margin-top: 0;
+	}
+
+	.region-sidebar-second .views-field-title {
+		padding-bottom: 7%;
+	}
+
+	.region-sidebar-second .views-row {
+		padding-top: 12px;
+		max-width: 115px;
+	}
+
+
+/* --- Unit page navigation ------------------------------------------------------------ */
+
+/* "Read more" menu under content */
+#block-menu-block-1 h2 {
+  font-size: 1em;
+  line-height: 1em;
+  color: inherit;
+  font-family: inherit;
+}
+
+#block-menu-block-1 ul {
+  margin-left: 10px;
+  font-family: inherit;
+}
+
+#block-menu-block-1 ul li {
+  list-style-image: url('../../../../../all/themes/doug_fir/images/bullet.png');
+  line-height: 20px;
+}
+
+/* "In this issue" sidebar sub-items */
+#block-views-article-list-block-1 .view-display-id-block_4 ul {
+  margin-bottom: 0;
+}
+
+#block-views-article-list-block-1 .view-display-id-block_4 ul li {
+  /*list-style: none;*/
+  padding: 0;
+  margin-left: 15px;
+}
+
+/*--------------------------------------------------------------------------*/
+@media (min-width: 1200px) {
+	
+}
+
+@media (max-width: 1199px) {
+	/* Hide cover image */
+	  .node-type-food-issue-menu-item .region-sidebar-first,
+	  .node-type-article .region-sidebar-first,
+	  .node-type-oap-focus-subject .region-sidebar-first,
+	  .node-type-oap-sections .region-sidebar-first {
+	  	display: none;
+	  }
+}
+
+@media (max-width: 1199px) and (min-width: 980px) {
+	/* Hide cover image */
+		.node-type-food-issue-menu-item #page-wrapper > .row > .span9,
+	  .node-type-article #page-wrapper > .row > .span9,
+	  .node-type-oap-focus-subject #page-wrapper > .row > .span9,
+	  .node-type-oap-sections #page-wrapper > .row > .span9 {
+	  	width: 976px;
+	  }
+	  .node-type-food-issue-menu-item #page-wrapper > .row > .span9 > .row > .span6,
+	  .node-type-article #page-wrapper > .row > .span9 > .row > .span6,
+	  .node-type-oap-focus-subject #page-wrapper > .row > .span9 > .row > .span6,
+	  .node-type-oap-sections #page-wrapper > .row > .span9 > .row > .span6 {
+	  	width: 727px;
+	  }
+}
+
+@media (min-width: 980px) {
+	/* Graphical-search apply button */
+		.view-id-magazine_search .views-submit-button {
+			padding-top: 33px;
+			clear: none;
+		}
+}
+
+@media (max-width: 979px) {
+	/* Articles list */
+	  .view-magazine-articles .view-content .views-row {
+	    padding-bottom: 1.5em;
+	  }
+}
+
+@media (min-width: 768px) {
+	
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	/* Hide cover image */
+		.node-type-food-issue-menu-item #page-wrapper > .row > .span9,
+	  .node-type-article #page-wrapper > .row > .span9,
+	  .node-type-oap-focus-subject #page-wrapper > .row > .span9,
+	  .node-type-oap-sections #page-wrapper > .row > .span9 {
+	  	width: 724px;
+	  }
+	  .node-type-food-issue-menu-item #page-wrapper > .row > .span9 > .row > .span6,
+	  .node-type-article #page-wrapper > .row > .span9 > .row > .span6,
+	  .node-type-oap-focus-subject #page-wrapper > .row > .span9 > .row > .span6,
+	  .node-type-oap-sections #page-wrapper > .row > .span9 > .row > .span6 {
+	  	width: 538px;
+	  }
+}
+
+@media (max-width: 767px) {
+	/* Articles list */
+  	.view-magazine-articles .view-content .views-row .span2 {
+    margin-bottom: 0.3em;
+  	}
+	/*  ---- Sidebar - Secondary ------------------------------------------------------------ */
+		#sidebar-second .content {
+			width: auto;
+			margin: 0;
+		}
+		#sidebar-second #block-views-article-list-block-1 .content .views-row .views-field-field-teaser-image {
+			float: left;
+		}
+		#sidebar-second #block-views-article-list-block-1 .content .views-row .views-field-title {
+			margin-left: 120px;
+			padding-bottom:10px;
+		}
+		#sidebar-second #block-views-article-list-block-1 .content .views-row .views-field-view .views-field-title {
+			margin-left: 0;
+			padding-bottom:0;
+		}
+		#sidebar-second #block-views-article-list-block-1 .content .views-row .views-field-view {
+			margin-left: 120px;
+		}
+		
+		#sidebar-second #block-views-article-list-block-1 .content .views-row {
+			max-width: none;
+		}
+		#sidebar-second #block-views-article-list-block-1 .view-display-id-block_4 .views-field-title {
+			padding-bottom: 15px;
+		}
+}
+
+@media (min-width: 540px) {
+	
+}
+
+@media (max-width: 540px) {
+	
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+	/*Article list*/
+		.view-magazine-articles .row-fluid .views-field-nothing .span2 {
+			width: 125px;
+			margin-right: 0;
+			float: left;
+		}
+		.view-magazine-articles .row-fluid .views-field-nothing .span10 {
+			margin-left: 126px;
+		}
+
+
+	/*  ---- Sidebar - Secondary ------------------------------------------------------------ */
+		/*#sidebar-second .content {
+			width: auto;
+			margin: 0;
+		}
+		#sidebar-second .content .views-row {
+			margin: 0 auto;
+			max-width: 373px;
+		}
+		#sidebar-second .content .views-row .views-field-field-teaser-image {
+			float: left;
+		}
+		#sidebar-second .content .views-row .views-field-title {
+			float: left;
+			max-width: 253px;
+			padding-left: 10px;
+		}*/
+}
+
+@media (min-width: 481px) and (max-width: 540px) {
+	
+}
+
+@media (max-width: 480px) {
+	
+}
+
+
+/* ---- LEGACY: TO BE SORTED INTO FORM FACTORS --------------------------------- */
+/* ---- Front page ------------------------------------------------------------ */
+
+/* laying out main articles with thumbs */
+/*.view-magazine-articles .view-content .views-field-field-teaser-image .field-content {
+	width: 16%;
+	float: left;
+}
+
+.view-magazine-articles .view-content .views-field-title .field-content,
+.view-magazine-articles .view-content .views-field-field-deck .field-content {
+	width: 72%;
+	float: left;
+}*/
+
+
+/*  ---- Sidebar - Primary ------------------------------------------------------------ */
+
+
+
+
+/* ---- Title -------------------------------------------------------------------- */
+#page-title {
+	display: none !important;
+}
+
+/*  ---- Main Content ------------------------------------------------------------ */
+
+
+
+
+/* FOR PREVIOUS VERSION OF OAP */
+/* Styling images and image description withing main content body */
+.float-right dd, 
+.float-right-vertical dd, 
+.float-right-buttons dd {
+    margin: 0;
+    padding: 10px;
+}
+
+dl.float-right {
+	background-color: #F3F3F3;
+	border: 1px solid #DDDDDD;
+	float: right;
+	margin: 0 0 15px 15px;
+	padding: 0;
+	text-align: left;
+	width: 280px;
+}
+
+dl.float-right-vertical {
+    background-color: #F3F3F3;
+    border: 1px solid #DDDDDD;
+    float: right;
+    margin: 0 0 15px 15px;
+    padding: 0;
+    text-align: left;
+    width: 190px;
+}
+
+.float-right dd img, 
+.float-right-vertical dd img, 
+.float-right-buttons dd img {
+    border: medium none;
+    padding-bottom: 3px;
+}
+
+#content .float-right dd.caption, 
+#content .float-right-vertical dd.caption, 
+#content .float-right-buttons dd.caption {
+    font-family: inherit;
+    font-size: 0.925em;
+    font-style: inherit;
+    color: #595959;
+    padding-top: 0;
+}
+
+/* Story Header */
+.field-name-field-story-header .field-item {
+	padding-bottom: 5%;
+}
+
+/* Deck */
+.field-name-field-deck .field-item {
+	padding-bottom: 2%;
+	font-size: 1.20em;
+}
+
+.field-field-deck p {
+	font-size: 1.20em;
+	padding-top: 5%;
+}
+
+/* Deck - Remove additional padding above first item */
+.field-field-deck p:first-child {
+	padding-top: 1%;
+	
+}
+
+/* Author's Name */
+.node-article div.field-name-field-author {
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+
+/* Hide "Add to chile page" */
+.content .book_add_child {
+	display: none;
+}
+
+/* Style Printer-friendly version link */
+.node-oap-magazine ul.links,
+.node-oap-magazine li,
+ul.inline li {
+	margin-left: 0;
+	padding-left: 0;
+  padding: 0 0;
+}
+
+/*  ---- Footer ------------------------------------------------------------ */
+#footer li {
+	list-style: none;
+}	
+
+#footer ul a {
+    display: inline;
+}
+
+#footer a {
+	text-decoration: underline;
+}
+
+#footer #footer-left {
+	float: left;
+	width: 13%;
+	padding-left: 2%;
+	min-width: 150px;
+	padding-bottom: 3%;
+}
+
+#footer #footer-center,
+#footer #footer-right {
+	float: left;
+	width: 20%;
+	padding-left: 6%;
+	min-width: 150px;
+}
+
+/*  --- Dinner in Oregon page  ------------------------------------------------------------ */
+
+#node-2074 .field-name-field-story-header .field-item {
+ padding-bottom: 0; 
+}
+
+img.menu-image {
+	padding-bottom: 1em;
+}
+
+div.food-menu-item  {
+	clear: both;
+}
+
+div.dinner-menu li {
+  list-style: none;
+}
+
+div.dinner-menu .views-field-field-teaser-image-fid {
+  float: left;
+  padding-right: 0.75em;
+}
+
+div.dinner-menu .views-field-field-deck-value {
+  font-size: 0.875em;
+}
+
+div.dinner-menu div.dotted-line  {
+	border-bottom: 1px dotted #999;
+	margin: 1.5em 0 1.5em 0;
+	clear: both;	
+}
+
+/* remove bg color on odd table rows */
+.node tr:nth-child(2n+1) {
+  background-color: transparent;
+}
+
+

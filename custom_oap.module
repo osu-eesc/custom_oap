@@ -1,0 +1,82 @@
+<?php
+// $Id: custom_oap.module 
+/**
+ * Oregon Agricultural Progress Module
+ * Helper module for EESC managed Drupal sites.
+ * Use for adding custom CSS to specific EESC sites.
+ */
+
+/**
+ * Provide desired updates to theme templates and other desired layout changes -- changes are only for this specific site.
+ * Updates are done with this module.
+ */
+
+/**
+ * Implements hook_theme_registry_alter()
+**/
+function custom_oap_theme_registry_alter(&$theme_registry) {
+  $mod_path = drupal_get_path('module', 'custom_oap');
+  $theme_registry_copy = $theme_registry;       // munge on a copy
+  _theme_process_registry($theme_registry_copy, 'phptemplate', 'theme_engine', 'pow', $mod_path);
+  $theme_registry += array_diff_key($theme_registry_copy, $theme_registry);
+  $hooks = array('node');
+  foreach ($hooks as $h) {
+    _custom_oap_insert_after_first_element($theme_registry[$h]['theme paths'], $mod_path);
+  }
+}
+
+/**
+ * Helper function for re-ordering arrays (needed by theme_registry_alter)
+*/
+function _custom_oap_insert_after_first_element(&$a, $element) {
+  if(is_array($a)) {
+    $first_element = array_shift($a);
+    array_unshift($a, $first_element, $element);
+  }
+}
+
+/**
+ * @file
+ * Display Suite Custom Layouts for OAP
+ */
+function custom_oap_ds_layout_info() {
+  $path = drupal_get_path('module', 'custom_oap') . '/ds_layouts';
+  $layouts = array();
+  // Fluid Teaser Layout
+  $layouts['fluid_teaser_layout'] = array(
+    'label' => t('Fluid Teaser Layout'),
+    'path' => $path . "/fluid_teaser_layout",
+    'regions' => array(
+      'image' => t('Image'),
+      'contents' => t('Contents'),
+    ),
+    'form' => TRUE,
+    'image' => FALSE,
+    'css' => TRUE,
+  );
+  return $layouts;
+}
+
+/**
+ * Implementation of hook_views_query_alter
+ *
+ * @param type $view
+ * @param type $query 
+ */
+function custom_oap_views_query_alter(&$view, &$query) {
+  // create a custom sort order for magazine articles
+  if ($view->name == 'magazine_articles' || ($view->name == 'article_list' && $view->current_display == 'block_1')) {
+    $query->orderby = array(
+      array(
+        'field' => 'CASE
+            WHEN field_data_field_section_header_field_section_header_value = \'Editor\\\'s Note\' THEN -999
+            WHEN field_data_field_section_header_field_section_header_value = \'Profile\' THEN 998
+            WHEN field_data_field_section_header_field_section_header_value = \'Update\' THEN 999
+            ELSE book_menu_links_weight
+          END',
+        'direction' => 'ASC'
+      )
+    );
+  }
+}
+
