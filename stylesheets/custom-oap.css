@@ -141,13 +141,13 @@
 /* Article lists - sidebar */	
 
   .region-sidebar-second .view-article-list .views-field-title,
-  .region-sidebar-second .view-depth-of-field .views-field-colorbox-1 {
+  .region-sidebar-second .view-depth-of-field .views-field-field-depth-photo-1 {
     font-size: 107.15%;
     padding-top: 3px;
   }
 
   .region-sidebar-second .view-article-list .views-field-title a,
-  .region-sidebar-second .view-depth-of-field .views-field-colorbox-1 a {
+  .region-sidebar-second .view-depth-of-field .views-field-field-depth-photo-1 a {
     color: #000;
   }
 
@@ -536,7 +536,8 @@
 		border: 1px solid #7C7B76;
 	}
 
-	.view-depth-of-field .view-content h3 a {
+	.view-depth-of-field .view-content h3 a,
+	.view-depth-of-field .views-field-field-depth-photo-1 a {
 		display: inline;
 	}
 
