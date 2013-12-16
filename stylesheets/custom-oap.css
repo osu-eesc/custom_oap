@@ -530,9 +530,9 @@
 
 /* Depth of field display */
 	.view-depth-of-field img {
-		-webkit-border-radius: 8px;
-		-moz-border-radius: 8px;
-		border-radius: 8px;
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		border-radius: 7px;
 		border: 1px solid #7C7B76;
 	}
 
