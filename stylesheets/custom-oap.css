@@ -500,6 +500,28 @@
 	  background-color: transparent;
 	}
 
+/* 'Get the app' Page */
+	#node-2393 .service-links,
+	#node-2393 .field-name-field-deck {
+		display: none;
+	}
+	#node-2393 h2 {
+		padding-top: 0;
+		font-family: inherit;
+		color: inherit;
+	}
+	#node-2393 h3 {
+		margin-top: 0;
+		font-weight: normal;
+	}
+	#node-2393 .row-fluid .span6 { /* image spans */
+		margin-top: 2em;
+		text-align: center;
+	}
+	#node-2393 .row-fluid .span12 { /* text span */
+		margin-top: 2em;
+	}
+
 /*---------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------Viewport rules below here------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------*/
