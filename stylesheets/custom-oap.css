@@ -398,8 +398,13 @@
 	}
 
 /* ---- Title ------------------ */
-	#page-title {
-		display: none !important;
+	.page-topics #page-title,
+	.node-type-oap-article #page-title,
+	.node-type-oap-sections #page-title,
+	.node-type-oap-focus-subject #page-title,
+	.node-type-food-issue-menu-item #page-title,
+	.node-type-oap-magazine #page-title {
+		display: none;
 	}
 
 /*  ---- Footer ---------------- */
@@ -432,6 +437,10 @@
 	}
 	
 /*  --- Dinner in Oregon page  ---------------- */
+	#node-2443 .service-links {
+		display: none;
+	}
+
 	#node-2074 .field-name-field-story-header .field-item {
 	 padding-bottom: 0; 
 	}
@@ -539,6 +548,25 @@
 	.view-depth-of-field .view-content h3 a,
 	.view-depth-of-field .views-field-field-depth-photo-1 a {
 		display: inline;
+	}
+
+/* Winter 2014 AES Map page */
+	#node-2284 .service-links {
+		display: none;
+	}
+
+/* Author taxnonomy term pages */ 
+	.page-taxonomy-term #page-title {
+		display: block;
+		color: #252525;
+	} 
+
+	.page-taxonomy-term #page-title:before {
+		content: 'Stories by ';
+	} 
+
+	.page-taxonomy-term .term-listing-heading {
+		border-top: 1px #999 solid;
 	}
 
 /*---------------------------------------------------------------------------------------------------------------*/
