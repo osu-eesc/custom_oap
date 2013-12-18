@@ -400,6 +400,7 @@
 /* ---- Title ------------------ */
 	.page-topics #page-title,
 	.node-type-oap-article #page-title,
+	.node-type-article #page-title,
 	.node-type-oap-sections #page-title,
 	.node-type-oap-focus-subject #page-title,
 	.node-type-food-issue-menu-item #page-title,
