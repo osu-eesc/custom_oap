@@ -80,3 +80,14 @@ function custom_oap_views_query_alter(&$view, &$query) {
   }
 }
 
+/**
+ * Implementation of template_preprocess_html
+ *
+ */
+function custom_oap_preprocess_html(&$vars) {
+  if (isset($vars['page']['content']['system_main']['term_heading']['term'])) {
+    $c = $vars['page']['content']['system_main']['term_heading']['term']['#bundle'];
+    $vars['classes_array'][] = "page-taxonomy-vocabulary-$c";
+  }
+}
+
