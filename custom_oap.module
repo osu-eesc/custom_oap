@@ -83,11 +83,25 @@ function custom_oap_views_query_alter(&$view, &$query) {
 /**
  * Implementation of template_preprocess_html
  *
+ * Adds vocabulary name body class to term pages
+ *
  */
 function custom_oap_preprocess_html(&$vars) {
   if (isset($vars['page']['content']['system_main']['term_heading']['term'])) {
     $c = $vars['page']['content']['system_main']['term_heading']['term']['#bundle'];
     $vars['classes_array'][] = "page-taxonomy-vocabulary-$c";
+  }
+}
+
+/**
+ * Implementation of template_preprocess_page
+ *
+ * Preprends "stories by" to author page titles
+ *
+ */
+function custom_oap_preprocess_page(&$vars) {
+  if ($vars['page']['content']['system_main']['term_heading']['term']['#bundle'] == 'authors') {
+    $vars['title'] = 'Stories by ' . $vars['page']['content']['system_main']['term_heading']['term']['#term']->name;
   }
 }
 
