@@ -564,13 +564,13 @@
 	}
 
 /* Author taxnonomy term pages */ 
-	.page-taxonomy-term #page-title {
+	.page-taxonomy-vocabulary-authors  #page-title {
 		display: block;
 		color: #252525;
 	} 
 
-	.page-taxonomy-term .term-listing-heading {
-		border-top: 1px #999 solid;
+	.page-taxonomy-vocabulary-authors  .term-listing-heading {
+		border-top: 1px #d9d9d9 solid;
 	}
 
 /* Restore helptext for 2-col cck forms */
