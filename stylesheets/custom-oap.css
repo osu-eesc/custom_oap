@@ -760,7 +760,7 @@
 
 @media (max-width: 480px) {
 	/*Article image styling*/
-		dl.float-right {
+		.node-type-article dl.float-right {
 			float: none;
 			margin: 0 auto;
 		}
