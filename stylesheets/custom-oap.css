@@ -680,7 +680,7 @@
 		#sidebar-second #block-views-article-list-block-1 .view-display-id-block_4 .views-field-title {
 			padding-bottom: 15px;
 		}
-		
+
 	/*Article Sub-Title*/
 		.node-article .field-name-field-sub-title {
 			line-height: 1.2em;
@@ -692,7 +692,10 @@
 }
 
 @media (max-width: 540px) {
-	
+	/* Stories block padding */
+		#block-menu-block-1 {
+			padding: .4em;
+		}
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
