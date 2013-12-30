@@ -760,11 +760,7 @@
 
 @media (max-width: 480px) {
 	/*Article image styling*/
-		div.caption {
-			width:100%;
-		}
-		
-		div.caption div.caption-inner {
+		dl.float-right {
 			float: none;
 			margin: 0 auto;
 		}
