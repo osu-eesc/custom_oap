@@ -103,7 +103,7 @@
 	/* ~760px breakpoint: */
 
 	.about-oap {
-	  width: 325px;
+	  max-width: 325px;
 	  margin: 0 auto;
 	  text-align: center;
 	}
@@ -680,6 +680,10 @@
 		#sidebar-second #block-views-article-list-block-1 .view-display-id-block_4 .views-field-title {
 			padding-bottom: 15px;
 		}
+	/*Article Sub-Title*/
+		.node-article .field-name-field-sub-title {
+			line-height: 1.2em;
+		}
 }
 
 @media (min-width: 540px) {
@@ -735,6 +739,7 @@
 			float: none;
 			margin: 0 auto;
 		}
+
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
