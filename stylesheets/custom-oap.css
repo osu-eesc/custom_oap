@@ -225,7 +225,7 @@
 	}
 
 	.page-graphical-search .view-magazine-search .views-row .span2 {
-		max-width: 110px;
+		width: auto;
 	}
 
 /* Old Article Images */
