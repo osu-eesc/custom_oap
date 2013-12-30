@@ -103,7 +103,7 @@
 	/* ~760px breakpoint: */
 
 	.about-oap {
-	  width: 325px;
+	  max-width: 325px;
 	  margin: 0 auto;
 	  text-align: center;
 	}
@@ -578,6 +578,35 @@
 	  display: none;
 	}
 
+/* Timeline NoJS fallback */
+	.js .view-id-timeline .noscript {
+	  display: none;
+	}
+
+	.view-id-timeline.view-display-id-page_1 h3 {
+	  font-size: 2.5em;
+	  clear: both;
+	}
+
+	.view-id-timeline.view-display-id-page_1 .views-row {
+	  margin: 4em 0;
+	}
+
+	.view-id-timeline.view-display-id-page_1 .views-field-title {
+	  font-size: 1.5em;
+	  margin: 0 0 1em;
+	  clear: both;
+	}
+
+	.view-id-timeline.view-display-id-page_1 .views-field-field-timeline-media-image {
+	  width: 320px;
+	  float: right;
+	  padding: 0 0 20px 20px;
+	}
+
+	.views-field.views-field-field-timeline-media-image p {
+	  padding-top: 3px;
+	}
 
 
 

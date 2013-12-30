@@ -5,7 +5,7 @@
 }
 
 .fluid-teaser-row div.image {
-	width: auto;
+	max-width: 109px;
 }
 
 .fluid-teaser-row .field-item {
