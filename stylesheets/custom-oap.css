@@ -258,22 +258,18 @@
 		font-family: "EksjaExtremesRegular", LeituraNews, serif;
 		font-size: 77.5%;
 		line-height: 1.75em;
+		padding-right: 2em;
 	}
 	
-	.service-label {
-		/*font-weight: bold;*/
+	.service-links:before {
+		content: "Share This: ";
 		border-bottom: 1px dotted #999;
+		display: block;
 	}
 
-	.service-links ul {
-		list-style: none;
+	.service-links a {
+		display: block;
 		margin: 0;
-	}
-
-	.service-links ul li {
-		list-style-image: none;
-		margin: 0;
-		line-height: 1.75em;
 		border-bottom: 1px dotted #999;
 		padding-right: 2em;
 	}
