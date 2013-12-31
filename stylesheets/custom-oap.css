@@ -776,6 +776,15 @@
 			float: none;
 			margin: 0 auto;
 		}
+
+		div.caption {
+			width:100%;
+		}
+
+		div.caption div.caption-inner {
+			float: none;
+			margin: 0 auto;
+		}
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
