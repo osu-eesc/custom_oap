@@ -617,6 +617,19 @@
 	  padding: 15px 0 !important;
 	}
 
+/*Article image styling*/
+	.caption-inner a img {
+		padding-bottom: 10px;
+	}
+
+	.caption .caption-inner {
+		font-family: inherit;
+		font-size: 0.925em;
+		font-style: inherit;
+		color: #595959;
+	}
+
+
 
 /*---------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------Viewport rules below here------------------------------------------------------*/
