@@ -1,4 +1,4 @@
-/* Put custom CSS and CSS overrides in this file. */
+ Put custom CSS and CSS overrides in this file. */
 
 /* ---- GENEREAL RULES ------------------------------------------------------------------------- */
 /* FOR PREVIOUS VERSION OF OAP */
@@ -258,7 +258,7 @@
 	  margin-top: 2em;
 	  font-size: 87.5%;
 	}
-
+greg is the best 
 /* Social Media Sharing Block */
 	.service-links {
 		float: right;
@@ -308,6 +308,11 @@
 	}
 
 /* Graphical-search page */
+
+	.ds-search-extra {
+		padding-bottom: 15px;
+	}
+
 	.view-id-magazine_search .views-submit-button {
 	
 	}
@@ -801,4 +806,4 @@
 
 /*-----------------------------------------------------------------------------------------------------*/
 /*--------------------------------Please don't add rules below here------------------------------------*/
-/*-----------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------
