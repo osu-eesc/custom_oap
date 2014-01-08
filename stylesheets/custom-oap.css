@@ -372,6 +372,10 @@
 		font-size: 90%;
 	}
 
+	#sidebar-second .view-article-list li {
+		line-height: 16px;
+	}
+
 	#sidebar-second .content h3 {
 		margin-top: 0;
 	}
