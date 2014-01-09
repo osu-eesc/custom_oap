@@ -8,7 +8,7 @@
 	
 
 	/* Story Header */
-		.field-name-field-story-header .field-item {
+		.not-front #content .field-name-field-story-header .field-item {
 			padding-bottom: 5%;
 		}
 
