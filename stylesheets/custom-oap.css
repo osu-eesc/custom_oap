@@ -8,10 +8,15 @@
 	
 
 	/* Story Header */
-		.not-front #content .field-name-field-story-header .field-item {
+		.not-front #content .field-name-field-story-header img {
+			padding-bottom: 1.7em;
+		}
+		
+		/* .not-front #content .field-name-field-story-header .field-item {
 			padding-bottom: 5%;
 		}
-
+		*/
+	
 	/* Deck */
 		.field-name-field-deck .field-item {
 			padding-bottom: 2%;
