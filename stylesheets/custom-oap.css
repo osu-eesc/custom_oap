@@ -249,7 +249,7 @@
 	#osu-top-hat .oap-search {
 		float: right;
 		height: 100%;
-		width:	170px;
+		width:	auto;
 	}
 
 	#osu-top-hat .oap-search .content {
