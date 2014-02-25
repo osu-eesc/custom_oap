@@ -292,6 +292,10 @@
 	}
 	
 /* Article Sidebar (the field after article content, not the page region) */
+	.field-name-field-sidebar {
+		clear: both;
+	}
+
 	.content .node .field-name-field-sidebar-sub-title {
 		background-color: #EFEDEE;
 		padding: 10px;
